@@ -19,8 +19,8 @@
 <td >{{product.price}}</td>
 <td >{{product.availableQuantity}}</td>
 <td >{{product.company}}</td>
-<td><a href="#">
-    <span class="glyphicon glyphicon-pencil"></span>
+<td><a [routerLink]="['/edit', product.id]">
+    Edit
   </a></td>
   </tr>
 </table>
