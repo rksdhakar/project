@@ -1,0 +1,26 @@
+
+<div class="table-responsive" style="width:600px">
+<table class="table  table-bordered">
+  <thead>
+    <th>Id</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Company</th>
+    <th>Action</th>
+  </thead>
+  <tr *ngFor="let product of productDetail ">
+<td>{{product.id}}</td>
+<td > <img [src]="product.image"  height="50px" width="50px" /></td>
+<td >{{product.name}}</td>
+<td >{{product.price}}</td>
+<td >{{product.availableQuantity}}</td>
+<td >{{product.company}}</td>
+<td><a href="#">
+    <span class="glyphicon glyphicon-pencil"></span>
+  </a></td>
+  </tr>
+</table>
+</div>
+

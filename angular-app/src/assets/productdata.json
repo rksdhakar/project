@@ -1,0 +1,37 @@
+[{
+  "id": 1,
+  "name": "Laptop",
+  "price": "35000",
+  "availableQuantity": "10",
+  "image": "/assets/images/laptop.jpg",
+  "company": "Dell"
+}, {
+    "id": 2,
+    "name": "Printer",
+    "price": "15000",
+    "availableQuantity": "35",
+    "image": "/assets/images/laptop.jpg",
+    "company": "HP"
+}, {
+    "id": 3,
+    "name": "Mouse",
+    "price": "800",
+    "availableQuantity": "220",
+    "image": "/assets/images/laptop.jpg",
+    "company": "Dell"
+}, {
+    "id": 4,
+    "name": "Keyboard",
+    "price": "3200",
+    "availableQuantity": "23",
+    "image": "/assets/images/laptop.jpg",
+    "company": "HP"
+}, {
+    "id": 5,
+    "name": "Bag",
+    "price": "1500",
+    "availableQuantity": "500",
+    "image": "/assets/images/laptop.jpg",
+    "company": "VIP"
+}
+]
