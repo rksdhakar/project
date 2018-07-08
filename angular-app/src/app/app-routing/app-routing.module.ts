@@ -6,10 +6,10 @@ import { AddComponent }     from '../Product/add/add.component';
 import { EditComponent } from '../Product/edit/edit.component';
 
 const appRoutes: Routes = [
-  { path: 'viewProduct', component: ViewComponent },
+  { path: 'viewProducts', component: ViewComponent },
   { path: 'add',        component: AddComponent },
   { path: 'edit/:id',        component: EditComponent },
-  { path: '',   redirectTo: '/viewProduct', pathMatch: 'full' }
+  { path: '',   redirectTo: '/viewProducts', pathMatch: 'full' }
   // { path: '**', component: PageNotFoundComponent }
 ];
 
