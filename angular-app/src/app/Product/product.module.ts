@@ -4,9 +4,10 @@ import {ProductComponent} from './product.component'
 import { ViewComponent } from './view/view.component';
 import { AddComponent } from './add/add.component';
 import { EditComponent } from './edit/edit.component';
+import {AppRoutingModule} from '../../app/app-routing/app-routing.module';
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,AppRoutingModule
   ],
   exports:[
     ProductComponent,ViewComponent
