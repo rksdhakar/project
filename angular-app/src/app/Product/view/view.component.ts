@@ -5,13 +5,15 @@ import {Observable} from 'rxjs';
 import {Productdetail} from '../shared/model/productdetail'
 import {map} from 'rxjs/operators'
 import { parse } from 'querystring';
+import { DataSource } from '@angular/cdk/table';
+import { CdkTableModule } from '@angular/cdk/table';
 @Component({
   selector: 'app-view',
   templateUrl: './view.component.html',
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
-
+  displayedColumns: string[] = ['id', 'image', 'name', 'price','availableQuantity','action'];
   constructor(private productService:ProductService ) { }
   productDetail:Productdetail;
   ngOnInit() {
