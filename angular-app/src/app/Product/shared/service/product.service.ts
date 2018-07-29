@@ -1,19 +1,16 @@
 import { Injectable } from '@angular/core';
-import {Productdetail} from '../model/productdetail';
-import { Http, Response } from '@angular/http';
-import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators'
+import {DataService} from '../../../shared/dataservice.service';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 private data='../../../assets/productdata.json';
   
-  constructor(private http:Http) { }
+  constructor(private dataService:DataService) { }
 
   getProduct()
   {
-     return this.http.get(this.data);
+    return this.dataService.getAll(this.data);
   }
   handleError(error:Error)
   {
